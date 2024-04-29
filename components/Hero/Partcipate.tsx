@@ -1,4 +1,6 @@
 import React, {useEffect, useCallback} from 'react'
+import { GrNext } from "react-icons/gr";
+import { GrPrevious } from "react-icons/gr";
 import {
     Carousel,
     CarouselContent,
@@ -8,6 +10,7 @@ import {
   } from "@/components/ui/carousel"
 import { participateToParachanins } from '@/assets/constants'
 import useEmblaCarousel from 'embla-carousel-react'
+import { inter } from '@/lib/fonts';
 export default function Partcipate() {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false })
 
@@ -20,11 +23,11 @@ export default function Partcipate() {
       }, [emblaApi])
   return (
     <div className='text-white'>
-        <div className='flex justify-between my-3 px-4'>
-            <p>section header</p>
-            <div>
-   <button className='bg-red-500' onClick={scrollNext}>next</button>
-   <button className='bg-red-500' onClick={scrollPrev}>prev</button>
+        <div className='flex justify-between items-center my-4 px-4'>
+            <h1 className={`${inter.variable} font-sans font-medium text-xl text-gray-300`}>Participate in polkadot and parachains</h1>
+            <div className='flex space-x-3 items-center'>
+            <div className='bg-gray-700 w-11 h-11 rounded-full flex items-center justify-center cursor-pointer' onClick={scrollPrev}><GrPrevious  /></div>
+   <div className='bg-gray-700  w-11 h-11  rounded-full flex items-center justify-center cursor-pointer' onClick={scrollNext}><GrNext /></div>
    </div>
         </div>
 

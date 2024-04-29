@@ -31,6 +31,10 @@ import Authenticate from "@/components/Authenticate";
 import { projectCategories } from "@/assets/constants";
 import ProjectCategoryCard from "@/components/categories/ProjectCategoryCard";
 import Partcipate from "@/components/Hero/Partcipate";
+import Hero from "@/components/Hero/Hero";
+import ProjectsCategories from "@/components/categories/ProjectsCategories";
+import FeaturedProjects from "@/components/FeaturedProjects/FeaturedProjects";
+import Camapaigns from "@/components/campaigns/Camapaigns";
 export default function Index() {
 
   const [isShow, setisShow] = useState(false)
@@ -39,19 +43,12 @@ export default function Index() {
 
   return (
     <div className="flex-1 w-full flex flex-col  h-[300vh] bg-gray-950 px-3 ">
+      <Hero  />
     <Partcipate   />
-<h1 className="text-white">hello world</h1>
-<div className=" grid grid-cols-4 gap-5 border ">
-  {projectCategories.map((item, i) =>  (
-    <ProjectCategoryCard
-      title={item.title}
-      description={item.description}
-      colorFrom={item.colors.fromColor}
-      colorTo={item.colors.toColore}
-      colorThrough={item.colors.through}
-    />
-  ))}
-</div>
+
+<ProjectsCategories  />
+<FeaturedProjects  />
+<Camapaigns  />
  
         </div>
 

@@ -8,13 +8,21 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import Link from 'next/link'
 import Input from '../common/inputs/Input'
+import Button from '../common/Button'
+import AuthModal from '../common/AuthModal'
+import SignIn from '../SignIn'
 
 
 export default function TopNavbar() {
   const [isShow, setisShow] = useState(false)
   const [searchTxt, setsearchTxt] = useState("")
+ const [isAuth, setisAuth] = useState(false)
 
+  const toggleAuth = () =>  {
+     setisAuth(! isAuth)
+  }
     const  handleToggle = () => {
       setisShow(! isShow)
     }
@@ -53,9 +61,14 @@ onChange={(e) => setsearchTxt(e.target.value)}
 
  />
 
-  <div className='bg-white text-black py-1 px-4 rounded-lg cursor-pointer'>
+  <Button className='bg-white text-black' onClick={toggleAuth}>connect</Button>
+   <AuthModal isOpen={isAuth} closeModal={toggleAuth} withCloseButton withFooter>
+  <SignIn  />
+   </AuthModal>
+
+  <Link href={`/create`} className='bg-white text-black py-1 px-4 rounded-lg cursor-pointer'>
     create
-  </div>
+  </Link>
            
            </div>       </div>
            
