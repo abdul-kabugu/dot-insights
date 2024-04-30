@@ -1,10 +1,10 @@
-import ProjectsPage from '@/components/ProjectsPage'
+import CategoriesPage from '@/components/categories/CategoriesPage'
 import React from 'react'
 
 export default function page() {
   return (
     <div className='w-full'>
-       <ProjectsPage  />
+   <CategoriesPage  />
     </div>
   )
 }

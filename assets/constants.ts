@@ -35,59 +35,170 @@ import { GoProject } from "react-icons/go";
      },
  ]
 
- export const  projectCategories = [
- 
+
+   export const  allCategories = [
+    {
+        title : "All projects",
+         description : "This  is description of project category each project has  its own category",
+         link : "all",
+        colors : {
+            fromColor : "#db2777",
+            toColore : "#f43f5e",
+            through : "#e879f9"
+        },
+    },
+    {
+        title : "Consumer Apps",
+         description : "This  is description of project category each project has  its own category",
+         link : "consumerapps",
+        colors : {
+            fromColor : "#c026d3",
+            toColore : "#e879f9",
+            through : "#e879f9"
+        },
+    },
+    {
+        title : "Culture",
+         description : "This  is description of project category each project has  its own category",
+          link : "culture",
+        colors : {
+            fromColor : "#16a34a",
+            toColore : "#4ade80",
+            through : "#e879f9"
+        },
+    },
+    {
+        title : "Data",
+         description : "This  is description of project category each project has  its own category",
+          link : "data",
+        colors : {
+            fromColor : "#0d9488",
+            toColore : "#99f6e4",
+            through : "#e879f9"
+        },
+    },
     {
         title : "Defi",
          description : "This  is description of project category each project has  its own category",
+          link : "defi",
+        colors : {
+            fromColor : "#2563eb",
+            toColore : "#38bdf8",
+            through : "#e879f9"
+        },
+    },
+    {
+        title : "Enterprise",
+         description : "This  is description of project category each project has  its own category",
+         enterprise : "enterprise",
+        colors : {
+            fromColor : "#f472b6",
+            toColore : "#db2777",
+            through : "#e879f9"
+        },
+    },
+    {
+        title : "Exchanges",
+         description : "This  is description of project category each project has  its own category",
+          link : "exchanges",
+        colors : {
+            fromColor : "#f43f5e",
+            toColore : "#831843",
+            through : "#e879f9"
+        },
+    },
+    {
+        title : "Gaming",
+         description : "This  is description of project category each project has  its own category",
+         link : "gaming",
+
+        colors : {
+            fromColor : "#5b21b6",
+            toColore : "#9333ea",
+            through : "#e879f9"
+        },
+    },
+    {
+        title : "Infrastructure",
+         description : "This  is description of project category each project has  its own category",
+         link : "infrustructure",
+        colors : {
+            fromColor : "#059669",
+            toColore : "#14532d",
+            through : "#e879f9"
+        },
+    },
+    {
+        title : "Launching soon",
+         description : "This  is description of project category each project has  its own category",
+         link : "coming soon",
+
+        colors : {
+            fromColor : "#ef4444",
+            toColore : "#f97316",
+            through : "#e879f9"
+        },
+    },
+    {
+        title : "Service providers",
+         description : "This  is description of project category each project has  its own category",
+         link : "services",
+        colors : {
+            fromColor : "#431407",
+            toColore : "#f87171",
+            through : "#e879f9"
+        },
+    },
+    {
+        title : "Parachains",
+         description : "This  is description of project category each project has  its own category",
+         link : "parachains",
         colors : {
             fromColor : "#a855f7",
             toColore : "#f0abfc",
             through : "#e879f9"
         },
     },
+   ]
+ export const  projectCategories = [
+ 
     {
-        title : "Defi",
+        title : "Consumer Apps",
          description : "This  is description of project category each project has  its own category",
+         link : "consumerapps",
         colors : {
-            fromColor : "#ec4899",
-            toColore : "#f472b6",
+            fromColor : "#c026d3",
+            toColore : "#e879f9",
+            through : "#e879f9"
+        },
+    },
+    {
+        title : "Culture",
+         description : "This  is description of project category each project has  its own category",
+          link : "culture",
+        colors : {
+            fromColor : "#16a34a",
+            toColore : "#4ade80",
+            through : "#e879f9"
+        },
+    },
+    {
+        title : "Data",
+         description : "This  is description of project category each project has  its own category",
+          link : "data",
+        colors : {
+            fromColor : "#0d9488",
+            toColore : "#99f6e4",
             through : "#e879f9"
         },
     },
     {
         title : "Defi",
          description : "This  is description of project category each project has  its own category",
+          link : "defi",
         colors : {
-            fromColor : "#ec4899",
-            toColore : "#f472b6",
-            through : "#e879f9"
-        },
-    },
-    {
-        title : "Defi",
-         description : "This  is description of project category each project has  its own category",
-        colors : {
-            fromColor : "#ec4899",
-            toColore : "#f472b6",
-            through : "#e879f9"
-        },
-    },
-    {
-        title : "Defi",
-         description : "This  is description of project category each project has  its own category",
-        colors : {
-            fromColor : "#ec4899",
-            toColore : "#f472b6",
-            through : "#e879f9"
-        },
-    },
-    {
-        title : "Defi",
-         description : "This  is description of project category each project has  its own category",
-        colors : {
-            fromColor : "#ec4899",
-            toColore : "#f472b6",
+            fromColor : "#2563eb",
+            toColore : "#38bdf8",
             through : "#e879f9"
         },
     },

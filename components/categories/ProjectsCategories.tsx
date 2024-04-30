@@ -22,6 +22,7 @@ export default function ProjectsCategories() {
         colorFrom={item.colors.fromColor}
         colorTo={item.colors.toColore}
         colorThrough={item.colors.through}
+        link={item.link}
       />
     ))}
   </div>
