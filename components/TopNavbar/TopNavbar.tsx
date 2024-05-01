@@ -56,7 +56,7 @@ export default function TopNavbar() {
            <input
 value={searchTxt}
 onChange={(e) => setsearchTxt(e.target.value)}
- className='focus:outline-none bg-inherit  border border-blue-300 h-8 py-1 px-3 rounded-xl placeholder:text-sm'
+ className='focus:outline-none bg-inherit  border border-blue-300 h-8 py-1 px-3 hidden md:block rounded-xl placeholder:text-sm'
  placeholder='search news'
 
  />

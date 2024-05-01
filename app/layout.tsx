@@ -6,6 +6,7 @@ import Sidebar from "@/components/sidebar/Sidebar";
 import { useState } from "react";
 import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
 import { ProfileContextProvider } from "@/components/ProfileContext";
+import Footer from "@/components/Footer";
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -40,8 +41,11 @@ export default function RootLayout({
           <ProfileContextProvider>
            <TopNavbar  />
            <div className="flex space-x-0 w-full">
+           
             <Sidebar isOpen={isOpen} toggleOpen={handleToggleIsOpen} />
+            
           {children}
+      
           </div>
           </ProfileContextProvider>
         </main>

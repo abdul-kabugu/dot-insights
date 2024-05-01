@@ -35,6 +35,7 @@ import Hero from "@/components/Hero/Hero";
 import ProjectsCategories from "@/components/categories/ProjectsCategories";
 import FeaturedProjects from "@/components/FeaturedProjects/FeaturedProjects";
 import Camapaigns from "@/components/campaigns/Camapaigns";
+import RealProject from "@/components/RealProject";
 export default function Index() {
 
   const [isShow, setisShow] = useState(false)
@@ -46,6 +47,7 @@ export default function Index() {
       <Hero  />
     <Partcipate   />
 
+<RealProject  />
 <ProjectsCategories  />
 <FeaturedProjects  />
 <Camapaigns  />

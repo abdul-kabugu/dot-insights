@@ -1,5 +1,6 @@
 import React from 'react'
 import { inter } from '@/lib/fonts';
+import Link from 'next/link';
 
  type FeaturedProps = {
     name : any
@@ -7,13 +8,14 @@ import { inter } from '@/lib/fonts';
     description : any
     mainColor : any,
     tags : any
+    projectId : any
  }
-export default function FeaturedProjectCard({name, logo, mainColor, description, tags} : FeaturedProps) {
+export default function FeaturedProjectCard({name, logo, mainColor, description, tags, projectId} : FeaturedProps) {
     const borderStyle = {
         borderBottom : `2px solid ${mainColor}`,
       };
   return (
-    <div className='text-gray-300 p-2 aspect-[16/9] bg-zinc-900 rounded-xl  cursor-pointer hover:bg-zinc-800 '>
+    <Link href={`/project/${projectId}`} className='text-gray-300 p-2 aspect-[16/9] bg-zinc-900 rounded-xl  cursor-pointer hover:bg-zinc-800 '>
          <div className={`p-3 relative`} style={borderStyle}>
              <h1 className={` text-gray-300 ${inter.className } text-lg font-bold `}>{name}</h1>
              <div className='absolute right-3 top-6'>
@@ -32,6 +34,6 @@ export default function FeaturedProjectCard({name, logo, mainColor, description,
                  </div>
              ))}
          </div>
-    </div>
+    </Link>
   )
 }

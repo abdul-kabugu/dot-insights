@@ -41,6 +41,7 @@ import { GoProject } from "react-icons/go";
         title : "All projects",
          description : "This  is description of project category each project has  its own category",
          link : "all",
+         subtracks : ["all"],
         colors : {
             fromColor : "#db2777",
             toColore : "#f43f5e",
@@ -50,7 +51,8 @@ import { GoProject } from "react-icons/go";
     {
         title : "Consumer Apps",
          description : "This  is description of project category each project has  its own category",
-         link : "consumerapps",
+         link : "consumer",
+         subtracks : ["SocialFi"],
         colors : {
             fromColor : "#c026d3",
             toColore : "#e879f9",
@@ -61,6 +63,8 @@ import { GoProject } from "react-icons/go";
         title : "Culture",
          description : "This  is description of project category each project has  its own category",
           link : "culture",
+          subtracks : ["ecosystem", "education", "music", "market place", "DAO", "art", "metaverse", "NFTs"],
+
         colors : {
             fromColor : "#16a34a",
             toColore : "#4ade80",
@@ -71,6 +75,7 @@ import { GoProject } from "react-icons/go";
         title : "Data",
          description : "This  is description of project category each project has  its own category",
           link : "data",
+          subtracks : ["dashboard", "explorer", "data storage", "stats"],
         colors : {
             fromColor : "#0d9488",
             toColore : "#99f6e4",
@@ -81,6 +86,7 @@ import { GoProject } from "react-icons/go";
         title : "Defi",
          description : "This  is description of project category each project has  its own category",
           link : "defi",
+          subtracks : ["Vaults", "launchpads", "lending", "digital securities"],
         colors : {
             fromColor : "#2563eb",
             toColore : "#38bdf8",
@@ -91,6 +97,7 @@ import { GoProject } from "react-icons/go";
         title : "Enterprise",
          description : "This  is description of project category each project has  its own category",
          enterprise : "enterprise",
+         subtracks : ["ticketing", "loyalty", "government"],
         colors : {
             fromColor : "#f472b6",
             toColore : "#db2777",
@@ -101,6 +108,7 @@ import { GoProject } from "react-icons/go";
         title : "Exchanges",
          description : "This  is description of project category each project has  its own category",
           link : "exchanges",
+          subtracks : ["fex" , 'trading', "swaps", "dex", "router"],
         colors : {
             fromColor : "#f43f5e",
             toColore : "#831843",
@@ -111,6 +119,7 @@ import { GoProject } from "react-icons/go";
         title : "Gaming",
          description : "This  is description of project category each project has  its own category",
          link : "gaming",
+         subtracks : ["battle royale", "casual", "card games", "FPS", "MOBA"],
 
         colors : {
             fromColor : "#5b21b6",
@@ -122,6 +131,7 @@ import { GoProject } from "react-icons/go";
         title : "Infrastructure",
          description : "This  is description of project category each project has  its own category",
          link : "infrustructure",
+         subtracks : ["wallet", "API", "tools", "SDK", "Bridge"],
         colors : {
             fromColor : "#059669",
             toColore : "#14532d",
@@ -131,7 +141,7 @@ import { GoProject } from "react-icons/go";
     {
         title : "Launching soon",
          description : "This  is description of project category each project has  its own category",
-         link : "coming soon",
+         link : "comingsoon",
 
         colors : {
             fromColor : "#ef4444",
@@ -143,6 +153,7 @@ import { GoProject } from "react-icons/go";
         title : "Service providers",
          description : "This  is description of project category each project has  its own category",
          link : "services",
+         subtracks : ["payments", "dev shop", "identity"],
         colors : {
             fromColor : "#431407",
             toColore : "#f87171",
@@ -165,7 +176,7 @@ import { GoProject } from "react-icons/go";
     {
         title : "Consumer Apps",
          description : "This  is description of project category each project has  its own category",
-         link : "consumerapps",
+         link : "consumer",
         colors : {
             fromColor : "#c026d3",
             toColore : "#e879f9",
@@ -345,7 +356,7 @@ import { GoProject } from "react-icons/go";
             subtracks : ["ticketing", "loyalty", "government"]
          },
          {
-            track : "Exchanges and on-ramps",
+            track : "Exchanges and Dexs",
             subtracks : ["fex" , 'trading', "swaps", "dex", "router"]
          },
          {
