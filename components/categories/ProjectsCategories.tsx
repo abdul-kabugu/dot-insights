@@ -14,7 +14,7 @@ export default function ProjectsCategories() {
             <MdChevronRight />
            </Link>
         </div>
-    <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 border ">
+    <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5  ">
     {projectCategories.map((item, i) =>  (
       <ProjectCategoryCard
         title={item.title}

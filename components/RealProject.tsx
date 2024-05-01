@@ -29,7 +29,7 @@ export default function RealProject() {
   return (
     <div>
         <h1 className='my-4'>Real projects</h1>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 border '>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5  '>
              {projects?.map((project, i) =>  (
                  <FeaturedProjectCard 
                    key={i}

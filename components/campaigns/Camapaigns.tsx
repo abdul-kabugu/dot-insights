@@ -14,7 +14,7 @@ export default function Camapaigns() {
             <MdChevronRight />
            </Link>
          </div>
-         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 border '>
+         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5  '>
             {quest?.map((item, i) => (
                  <CampaignCrad task={item.task} title={item.title} cover={item.cover} rewards={item.rewards} />
             ))}

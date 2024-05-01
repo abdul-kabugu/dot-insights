@@ -11,7 +11,7 @@ import { GoProject } from "react-icons/go";
     {
         title : "Discover",
         icon : GoHome,
-         link : "/home",
+         link : "/",
      },
      {
         title : "Projects",
