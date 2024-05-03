@@ -9,7 +9,7 @@ export default function Camapaigns() {
     <div className=' text-gray-200'>
          <div className='text-gray-200 flex justify-between items-center px-3 my-4'>
             <h1 className={`${inter.className} font-sans font-medium text-xl`}>High Reward Campaigns</h1>
-            <Link href={`/quests`} className='flex items-center space-x-3 text-blue-400'>
+            <Link href={`/campaigns`} className='flex items-center space-x-3 text-blue-400'>
             <p className='font-semibold capitalize'>see all campaigns</p>
             <MdChevronRight />
            </Link>

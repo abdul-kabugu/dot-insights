@@ -1,7 +1,10 @@
+import EducationPage from '@/components/education/EducationPage'
 import React from 'react'
 
 export default function page() {
   return (
-    <div> education page</div>
+    <div className='w-full'> 
+      <EducationPage  />
+    </div>
   )
 }
