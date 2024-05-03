@@ -24,9 +24,9 @@ import { GoProject } from "react-icons/go";
          link : "/events",
      },
      {
-        title : "News",
+        title : "Campaigns",
         icon : FaRegNewspaper,
-         link : "/news",
+         link : "/campaigns",
      },
      {
         title : "Education",

@@ -98,7 +98,7 @@ const handleAvatarUpload = async (file) => {
   const handleTagSelection = (tag) => {
     if (selectedTags.includes(tag)) {
       setSelectedTags(selectedTags.filter((selectedTag) => selectedTag !== tag));
-    } else if(! selectedTags.includes(tag) && selectedTags.length <= 4){
+    } else if(! selectedTags.includes(tag) && selectedTags.length <= 8){
       setSelectedTags([...selectedTags, tag]);
     }
   };
@@ -141,7 +141,7 @@ const handleAvatarUpload = async (file) => {
          reddit : watch("redditUrl"),
          explorer : watch("explorerUrl"),
          price_tracker : watch("priceTrackerUrl"),
-         main_color : mainColors,
+         main_color : projectColor,
          tags : selectedTags
 
       })

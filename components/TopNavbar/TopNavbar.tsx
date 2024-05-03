@@ -52,7 +52,7 @@ export default function TopNavbar() {
           </div>
 
            <div>
-         <div className='flex items-center space-x-4'>
+         <div className='flex items-center space-x-4 '>
            <input
 value={searchTxt}
 onChange={(e) => setsearchTxt(e.target.value)}

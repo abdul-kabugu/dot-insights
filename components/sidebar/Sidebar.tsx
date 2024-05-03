@@ -7,10 +7,15 @@ import { BsChevronDoubleRight, BsChevronDoubleLeft } from "react-icons/bs";
 import NavItem from './NavItem';
 
  type sidebarProps =  {
-      isOpen : any
-      toggleOpen : any 
+      isOpen? : any
+      toggleOpen? : any 
  }
-export default function Sidebar({isOpen, toggleOpen} : sidebarProps) {
+export default function Sidebar({ } : sidebarProps) {
+  const [isOpen, setisOpen] = useState(false)
+
+  const handleToggleIsOpen = () =>  {
+    setisOpen(! isOpen)
+   }
 
    const pathName = usePathname()
    console.log("the path name ", pathName)
@@ -22,9 +27,9 @@ export default function Sidebar({isOpen, toggleOpen} : sidebarProps) {
 
    <div className={`text-white absolute ${isOpen ? "left-[93%]" : "left-[85%]"}   my-2 bg-gray-800 w-7 h-7 rounded-full flex items-center justify-center hover:bg-gray-700 cursor-pointer`}>
      {isOpen  ? (
-   <BsChevronDoubleLeft onClick={toggleOpen} />
+   <BsChevronDoubleLeft onClick={handleToggleIsOpen} />
      ) : (
-         <BsChevronDoubleRight onClick={toggleOpen} />
+         <BsChevronDoubleRight onClick={handleToggleIsOpen} />
      )}
    </div>
 

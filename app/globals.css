@@ -88,3 +88,11 @@
     min-width: 0;
   
   }
+
+  ::-webkit-calendar-picker-indicator {
+   color: blue;
+   background-color: white;
+   padding: 4px;
+   border-radius: 50px;
+   cursor: pointer;
+  }

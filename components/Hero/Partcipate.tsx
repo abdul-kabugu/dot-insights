@@ -1,6 +1,7 @@
 import React, {useEffect, useCallback} from 'react'
 import { GrNext } from "react-icons/gr";
 import { GrPrevious } from "react-icons/gr";
+import Autoplay from 'embla-carousel-autoplay'
 import {
     Carousel,
     CarouselContent,
@@ -12,7 +13,9 @@ import { participateToParachanins } from '@/assets/constants'
 import useEmblaCarousel from 'embla-carousel-react'
 import { inter } from '@/lib/fonts';
 export default function Partcipate() {
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false })
+   // const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, [Autoplay()] })
+
+   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false }, [Autoplay()])
 
     const scrollPrev = useCallback(() => {
         if (emblaApi) emblaApi.scrollPrev()
@@ -36,7 +39,9 @@ export default function Partcipate() {
 
           {participateToParachanins.map((item, i)  =>  (
             <div className="embla__slide basis-3/5" >
-               <div className='bg-green-500 border border-red-500 h-[250px] '> {item?.title} </div>
+               <div className=' h-[250px] bg-zinc-00 border border-gray-700 flex items-center justify-center '>
+                 <p className='font-extrabold text-4xl'>{item?.title} </p>
+                  </div>
                 </div>
           ))}
       </div>
