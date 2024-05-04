@@ -2,9 +2,11 @@
 import React, {useState, useEffect} from 'react'
 import { createClient } from '@/utils/supabase/client'
 import FeaturedProjectCard from './FeaturedProjects/FeaturedProjectCard'
+import ProjectsSpinners from './spinners/ProjectsSpinners'
 export default function RealProject() {
     const [isFetching, setisFetching] = useState(false)
     const [isFetchingError, setisFetchingError] = useState()
+    const [testTruth, settestTruth] = useState(true)
     const [projects, setprojects] = useState()
      const supabase = createClient()
 
@@ -25,6 +27,12 @@ export default function RealProject() {
         useEffect(() => {
            fetchData()
         }, [])
+
+       if(isFetching) {
+        return(
+           <ProjectsSpinners    />
+        )
+       }
         
   return (
     <div>

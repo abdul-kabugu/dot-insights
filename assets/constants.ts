@@ -217,20 +217,30 @@ import { GoProject } from "react-icons/go";
 
  export  const participateToParachanins =  [
      {
-        title : "Fisr event of parachains",
-         description : "non"
+        title : "participate to our dex for chance to win 20k  as  promised youwill get real money",
+         description : "steller swap",
+         logo : "https://pbs.twimg.com/profile_images/1671126588694609920/THQgYJtf_400x400.png"
+     },
+     
+     {
+        title : "participate to our dex for chance to win 20k",
+         description : "polimec",
+         logo : "https://pbs.twimg.com/profile_images/1648609268097007621/zLCEEksk_400x400.jpg"
      },
      {
-        title : "second event of parachains",
-         description : "non"
+        title : "participate to our dex for chance to win 20k",
+         description : "steller swap",
+         logo : "https://pbs.twimg.com/profile_images/1671126588694609920/THQgYJtf_400x400.png"
      },
      {
-        title : "Fisr event of parachains",
-         description : "non"
+        title : "participate to our dex for chance to win 20k",
+         description : "steller swap",
+         logo : "https://pbs.twimg.com/profile_images/1671126588694609920/THQgYJtf_400x400.png"
      },
      {
-        title : "Third event of parachains",
-         description : "non"
+        title : "participate to our dex for chance to win 20k",
+         description : "steller swap",
+         logo : "https://pbs.twimg.com/profile_images/1671126588694609920/THQgYJtf_400x400.png"
      },
  ]
 
@@ -376,3 +386,5 @@ import { GoProject } from "react-icons/go";
             subtracks : ["parachain"]
          },
     ]
+
+    export const fakeSpinnerArray = [1,2,3,4]

@@ -43,11 +43,11 @@ export default function Index() {
 
 
   return (
-    <div className="flex-1 w-full flex flex-col  h-[300vh] bg-gray-950 px-3 ">
+    <div className="flex-1 w-full flex flex-col  min-h-screen bg-gray-950 px-3 ">
       <Hero  />
     <Partcipate   />
 
-<RealProject  />
+
 <ProjectsCategories  />
 <FeaturedProjects  />
 <Camapaigns  />

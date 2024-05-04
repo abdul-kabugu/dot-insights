@@ -34,7 +34,7 @@ export default function EventCard({cover, title, rewards, organizer, eventId, st
         const minutesDifference = Math.floor(timeDifference / (1000 * 60));
     
         if (minutesDifference <= 0) {
-            return "Event has already started";
+            return "this Event is ended";
         } else if (minutesDifference <= 60 * 24) {
             const hours = Math.floor(minutesDifference / 60);
             const minutes = minutesDifference % 60;
@@ -80,7 +80,7 @@ export default function EventCard({cover, title, rewards, organizer, eventId, st
              <p className={`${inter.className} font-semibold`}>{title}</p>
           </div>
           <div className='flex justify-between my-3'>
-             <Link href={`/project${profile?.id}`} className='flex space-x-1 items-center'>
+             <Link href={`/project/${profile?.id}`} className='flex space-x-1 items-center'>
                  <img  src={profile?.project_avatar} 
                    className='w-8 h-8 rounded-full'
                  />
