@@ -20,7 +20,8 @@ import { usePathname } from 'next/navigation'
 import { useProfileContext } from '../ProfileContext'
 import { Avatar , AvatarFallback, AvatarImage} from '../ui/avatar'
 import Search from './Search'
-
+import logo from '../../app/logo.jpg'
+import { log } from 'console'
 export default function TopNavbar() {
   const [isShow, setisShow] = useState(false)
   const [searchTxt, setsearchTxt] = useState("")
@@ -46,7 +47,13 @@ const {user} = useProfileContext()
          )
       }else {
         return(
+          <div>
           <Button className='bg-white text-gray-900' onClick={toggleAuth}>Sign in</Button>
+          <AuthModal isOpen={isAuth} closeModal={toggleAuth} withCloseButton withFooter>
+  <SignIn  />
+   <p className='text-xl text-gray-200'>Hello  world</p>
+   </AuthModal>
+          </div>
         )
       }
      }
@@ -79,22 +86,34 @@ const {user} = useProfileContext()
     </SheetHeader>
   </SheetContent>
              </Sheet>
+          </div >
+        <div className='flex space-x-1 items-center'>
+          <img   src={logo.src}  className='w-10 h-10 rounded-full object-cover'  />
+           <p className=' text-xl uppercase'>Discover</p>
           </div>
-
-          <h1>App Logo</h1>
           </div>
 
            <div className='md:w-2/4 '>
          <div className='flex items-center justify-between space-x-4  '>
 <Search  />
 
-
-   <AuthModal isOpen={isAuth} closeModal={toggleAuth} withCloseButton withFooter>
+<AuthModal isOpen={isAuth} closeModal={toggleAuth} withCloseButton withFooter>
   <SignIn  />
+   
    </AuthModal>
-
+ 
+   
  <div>
-  {getUserAuthState()}
+  {user && (
+      <div>
+      <Avatar className='cursor-pointer'>
+      <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+<AvatarFallback>CN</AvatarFallback>
+      </Avatar>
+   </div>
+  ) }  
+    <Button className={`bg-white w-28 text-gray-900 ${user &&  "hidden" }`} onClick={toggleAuth}>Sign in</Button> 
+
  </div>
            
            </div>       </div>

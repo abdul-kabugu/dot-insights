@@ -388,3 +388,9 @@ import { GoProject } from "react-icons/go";
     ]
 
     export const fakeSpinnerArray = [1,2,3,4]
+
+
+    export const APP_DESCRIPTION = "descripton"
+    export const APP_NAME = "app name"
+    export const WEBSITE_URL = "web url"
+    export const ZENVID_X_HANDLE = "twitter handle"

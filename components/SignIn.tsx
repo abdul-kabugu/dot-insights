@@ -28,7 +28,9 @@ export default function SignIn() {
     const [verfyngOtp, setverfyngOtp] = useState(false)
     const [verifyngError, setverifyngError] = useState(false)
 
-     const {user} = useProfileContext()
+    const {user} = useProfileContext()
+
+    
 
        console.log("the current user from modal", user)
     const supabase = createClient()
@@ -57,20 +59,22 @@ export default function SignIn() {
         setcurrentStep(step)
      }
 
-     useEffect(() => {
+     /*useEffect(() => {
           if(user  && currentStep === "HOME_STATE"){
             setcurrentStep("USER_STATE_DATA")
           }else if(otpData && ! user) {
             setcurrentStep("OTP_STATE")
+          }else {
+            setcurrentStep("HOME_STATE")
           }
-      }, [user, currentStep, otpData])
+      }, [user, currentStep, otpData])  */
       
 // HOME_STATE
       const getCurrentStep = () =>  {
-          if(currentStep  === "USER_STATE_DATA"){
+          if(currentStep  === "HOME_STATE"){
             return(
        <>
-         <div className=''>
+         <div className=' '>
              <h1 className='text-center text-2xl font-medium text-zinc-50'>Welcome to Dot Quests
 The Polkadot Marketing Hub</h1>
 
@@ -108,7 +112,9 @@ The Polkadot Marketing Hub</h1>
      />
      </div>
 
-     <Button className='bg-blue-600 rounded-xl px-3 py-1' disabled={! usermail}>Continue</Button>
+     <Button className='bg-blue-600 rounded-xl px-3 py-1' disabled={! usermail}
+       onClick={() =>  setcurrentStep("OTP_STATE")}
+     >Continue</Button>
    </div>
           </div>
    

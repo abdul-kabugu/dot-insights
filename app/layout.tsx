@@ -13,9 +13,33 @@ const defaultUrl = process.env.VERCEL_URL
   : "http://localhost:3000";
 
 export const metadata = {
-  metadataBase: new URL(defaultUrl),
   title: "Discover polkadot",
-  description: "your home to discover polkadot",
+   description : "description ",
+   canonical : "https://www.canonical.ie/",
+   openGraph: {
+    title: 'Discover Polkadot | Parachains',
+    description: 'Discover a wide variety of apps, blockchains, wallets and explorers, built on th Polkadot ecosystem by developers and contributors from across the globe.',
+    images : [
+      {
+        url: 'https://zfijyshxzcpbcrofuptf.supabase.co/storage/v1/object/public/quests_platform/Discover%20Polkadot.png',
+        width: 800,
+        height: 600,
+        alt: 'Og Image Alt',
+      },
+      {
+        url: 'https://zfijyshxzcpbcrofuptf.supabase.co/storage/v1/object/public/quests_platform/Discover%20Polkadot.png',
+        width: 800,
+        height: 600,
+        alt: 'Og Image Alt',
+      },
+      {
+        url: 'https://zfijyshxzcpbcrofuptf.supabase.co/storage/v1/object/public/quests_platform/Discover%20Polkadot.png',
+        width: 800,
+        height: 600,
+        alt: 'Og Image Alt',
+      },
+    ]
+  }
 };
 
 export default function RootLayout({

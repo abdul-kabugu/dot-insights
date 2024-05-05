@@ -5,7 +5,8 @@ import {
      ZENVID_X_HANDLE,
 
     
-    } from '@/assets/constant'
+    } from '@/assets/constants'
+   
 
 
   import Head from 'next/head'

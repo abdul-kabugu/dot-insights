@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 'use client'
 import { featuredProjects } from '@/assets/constants'
 import React, {useState, useEffect} from 'react'
@@ -43,8 +45,9 @@ export default function FeaturedProjects() {
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5  '>
             {projects && projects.map((item, i) =>  (
-                 <FeaturedProjectCard name={item.name} description="Eeach project will have  a unique  description related to role" 
+                 <FeaturedProjectCard key={i} name={item.name} description={item?.highlight}
                    mainColor={item.main_color} logo={item.logo} tags={item.tags}
+                   projectId={item?.id}
                  />
             ))}
         </div>

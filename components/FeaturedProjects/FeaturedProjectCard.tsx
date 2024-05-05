@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import React from 'react'
 import { inter } from '@/lib/fonts';
 import Link from 'next/link';

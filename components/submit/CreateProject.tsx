@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 "use client"
 import React, {useState, useRef} from 'react'
 import { FaAngleLeft } from "react-icons/fa6";

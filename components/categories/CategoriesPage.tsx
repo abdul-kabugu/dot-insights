@@ -1,3 +1,4 @@
+//@ts-nocheck
 "use client"
 import React, {useState, useEffect} from 'react'
 import { usePathname } from 'next/navigation'
@@ -92,7 +93,7 @@ useEffect(() => {
             name={item.project_name}
             logo={item.project_avatar}
              description={item?.project_highlight}
-             mainColor={`#ec4899`}
+             mainColor={item?.main_color}
              projectId={item?.id}
              tags={item?.tags}
            />
