@@ -14,7 +14,7 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata = {
   title: "Discover polkadot",
-   description : "description ",
+   description : "Discover a wide variety of apps, blockchains, wallets and explorers, built on th Polkadot ecosystem by developers and contributors from across the globe. ",
    canonical : "https://www.canonical.ie/",
    openGraph: {
     title: 'Discover Polkadot | Parachains',

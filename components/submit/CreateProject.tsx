@@ -8,7 +8,7 @@ import { useForm, SubmitHandler } from "react-hook-form"
 import { mainColors, projectTags } from '@/assets/constants';
 import Button from '../common/Button';
 import { createClient } from '@/utils/supabase/client';
-
+import { useProfileContext } from '../ProfileContext';
 type Inputs = {
     name: string
     highlight: string
@@ -39,6 +39,7 @@ export default function CreateProject() {
  const [isUploadingBanner, setisUploadingBanner] = useState(false)
  const [isUploadingAvatar, setisUploadingAvatar] = useState(false)
 
+ const {user} = useProfileContext()
     // Function to handle banner image upload
 const handleImageUpload = async (file) => {
   setisUploadingBanner(true)
@@ -156,6 +157,14 @@ const handleAvatarUpload = async (file) => {
 
   setisSaving(false)
        
+    }
+
+    if(! user){
+      return(
+        <div className='w-full h-full flex items-center justify-center'>
+           <p className='text-xl'>Sign in to continue</p>
+        </div>
+      )
     }
 
   return (

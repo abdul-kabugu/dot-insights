@@ -51,7 +51,7 @@ const {user} = useProfileContext()
           <Button className='bg-white text-gray-900' onClick={toggleAuth}>Sign in</Button>
           <AuthModal isOpen={isAuth} closeModal={toggleAuth} withCloseButton withFooter>
   <SignIn  />
-   <p className='text-xl text-gray-200'>Hello  world</p>
+  
    </AuthModal>
           </div>
         )
