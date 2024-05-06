@@ -9,10 +9,11 @@ Discover: This platform is dedicated to exploring and uncovering the vast Polkad
 
 Quests: An innovative platform empowering ecosystems to create both off-chain and on-chain campaigns. By generating engaging experiences and rewarding their communities, to  foster deeper engagement and collaboration within the Polkadot ecosystem."
 
-## project links 
+## Project Links 
  ### DISCOVER  : https://discover.linkdots.xyz/
   ### QUESTS  : https://quests.linkdots.xyz/
   ### LANDING PAGE https://linkdots.xyz/en
+  ### QUESTS GITHUB LINK  https://github.com/AIWeb3-DAO/community_quests
 
 
 
